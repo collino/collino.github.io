@@ -1,0 +1,6 @@
+{{> header}}
+	    <div class="main-wrapper">
+	    	<h1>{{title}}</h1>
+			{{{ contents }}}
+		</div>
+{{> footer}}

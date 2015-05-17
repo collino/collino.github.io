@@ -1,2 +1,3 @@
-# collino-me
-My site generator
+# My personal site
+
+trying out Metalsmith

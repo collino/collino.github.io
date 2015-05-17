@@ -1,0 +1,13 @@
+{{> header}}
+	    <div class="main-wrapper">
+	    	<h1>{{title}}</h1>
+			{{{ contents }}}
+			{{#each collections.projects}}
+            <li>
+                <h3>{{title}}</h3>
+                <span>{{date}}</span>
+                <p><img src="{{image}}"></p>
+            </li>
+        	{{/each}}
+		</div>
+{{> footer}}
