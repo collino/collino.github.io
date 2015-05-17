@@ -5,7 +5,7 @@
   "homepage": "http://collino.me",
   "issues": "https://github.com/collino/collino.me/issues",
   "repository": "https://github.com/collino/collino.me.git",
-  "author": "Robin Thrift <thrift.d.robin@googlemail.com>",
+  "author": "Collin Olan <collin.holm@googlemail.com>",
   "devDependencies": {
     "handlebars": "^3.0.1",
     "metalsmith": "^1.5.0",
