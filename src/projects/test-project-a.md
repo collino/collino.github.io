@@ -1,9 +1,10 @@
 ---
-title: Test project A
+title: Test project – A
 collection: projects
 template: project.hbt
 date: 2015-02-21
-image: http://lorempixel.com/480/200
+card-image: http://loremflickr.com/480/240/all?random=2
+role: None
 ---
 
 # Title of this project

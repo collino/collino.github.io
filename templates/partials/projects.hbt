@@ -1,0 +1,15 @@
+<div id="projects">
+    <h2>Projects</h2>
+    <p>Coming soon.</p>
+{{!-- {{#each collections.projects}}
+    <a href="/{{this.path}}">
+        <figure>
+            <figcaption>
+                <h3>{{this.title}}</h3>
+                <span>{{this.date}}</span>
+            </figcaption>
+            <img src="{{this.card-image}}" class="card-img">
+        </figure>
+    </a>
+{{/each}} --}}
+</div>

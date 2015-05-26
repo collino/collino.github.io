@@ -1,0 +1,36 @@
+{{> header}}
+    <section id="intro">
+        <header>
+            <div class="avatar" id="me">
+                <img src="https://www.dropbox.com/s/3bn2ek9j0optslx/IMG_7359%20copy.PNG?raw=1">
+            </div>
+            <h1>{{title}}</h1>
+            {{{ contents }}}
+            {{> nav }}
+            {{> satellite }}
+        </header>
+    </section>
+    {{> projects }}
+    {{> about }}
+    {{!--
+    <script src="./scripts/dug.js"></script>
+    <script>
+    dug({
+      endpoint: 'http://api.dribbble.com/players/collino/shots',
+      target: '#projects',
+      template: '<h1>\
+          <span>Dribbble</span> \
+        </h1>\
+        <ul>\
+        {{#shots}}\
+          <li>\
+            <a href="{{url}}" title="{{title}}">\
+              <img src="{{image_400_url}}" alt="{{title}}">\
+            </a>\
+          </li>\
+        {{/shots}}\
+      </ul>'
+    });
+    </script> 
+     --}}
+{{> footer}}

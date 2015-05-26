@@ -1,5 +1,5 @@
 ---
-title: Hi, I'm Collin
-template: home.hbt
+title: Collin Olan
+template: index.hbt
 ---
-a designer with a diverse background who strives to create top tier experiences through user empathy and fresh visual design. My goal is to create work that is useful, beautiful, engaging and timeless.
+Hi! I'm a designer, currently working at <a href="http://chartbeat.com" rel="external">Chartbeat</a>, was previously at <a href="http://google.com/design" rel="external">Google UXA</a>, <a href="http://kernandlead.com" rel="external">Kern + Lead</a> and <a href="http://www.frogdesign.com" rel="external">frog</a>. Have a look at some projects I've worked on, or read more about me.
