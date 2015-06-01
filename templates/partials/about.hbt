@@ -1,7 +1,7 @@
 <section id="about">
 	{{!-- Load in about content from a file? --}}
 	<h1>About me</h1>
-	<p>I grew up in the Midwest but live in Brooklyn, NY. I've been designing for the web since around 2000. A lot has changed since then, but my approach and fundamental beliefs are the same. I design for the open web and start with what is now called a mobile first approach. I have always believed that to be able to design for the web you also need to be able to develop for it. In fact, I had never separated web design and front end development until I worked for a large agency.</p>
-
-	<p>I am very much influenced by great typography, spend a great deal of time listening to music and thinking about art. As much as computers of all sizes are a part of my day, I look forward to time away from them. I've been able to draw since I can first remember, and love the outdoors. I'm an avid cyclist, and also spend a quarter of the year with a bunch of other crazies racing Cyclocross.</p>
+	<p>I'm a designer with a diverse background and extensive experience in creating top tier experiences through user empathy and fresh visual design. My goals are to create useful, beautiful work and to facilitate the same in others.</p>
+	{{!-- what was i going to put here? fuck if i know. got interrupted --}}
+	<p>I'm influenced by nature, great typography, and spend a great deal of time listening to music and thinking about art. As much as computers of all sizes are a part of my day, I look forward to time away from them. I've been able to draw since I can first remember, and love the outdoors. I'm an avid cyclist, and also spend a quarter of the year with a bunch of other crazies racing Cyclocross.</p>
 </section>

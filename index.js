@@ -14,13 +14,13 @@ Metalsmith(__dirname)
 	.use(serve())
 	.use(
 		watch({
-      		livereload: true,
+			paths: {
+        		"${source}/**/*": true,
+        		"templates/**/*": "**/*.md"
+      		},
+      		livereload: true
     	})
     )
- //    .use(metadata({
- //  		nav: './src/data/nav.json',
- //  		satellite: './src/data/satellite.json'
-	// }))
 	.use(markdown())
 	.use(collections({
 		projects: {
@@ -43,10 +43,10 @@ Metalsmith(__dirname)
 			about: 'partials/about'
 		}
 	}))
-	.destination('./build')
 	.use(less({
 		pattern: './src/styles/**/*.less'
 	}))
+	.destination('./build')
 	.build(function(err) {
 		if (err) { throw err; }
 	});
