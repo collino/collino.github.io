@@ -1,1 +1,1 @@
-git checkout master && rm -rf ./ && git checkout dev -- build && mv ./build/* ./ && git add . && git commit -m 'Site deploy' && git push origin master && git checkout dev
+# git checkout master && rm -r ./ && git checkout dev -- build && mv ./build/* ./ && git add . && git commit -m 'Site deploy' && git push origin master && git checkout dev
