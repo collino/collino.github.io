@@ -1,0 +1,111 @@
+/*
+
+try this:
+http://tympanus.net/Development/AnimatedGridLayout/
+
+*/
+
+body {
+	color: rgba(0,0,0,0.7);
+	margin: 0;
+	padding: 0;
+	font-family: 'Lucida Grande', Arial, 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3 {
+	font-weight: 300;
+}
+
+h1 {
+	color: rgba(0,0,0,0.6);
+}
+
+
+p {
+	max-width: 40em;
+	line-height: 1.25;
+}
+
+section {
+	padding: 32px 80px;
+}
+
+a {
+	color: rgba(0,0,0,0.8);
+	font-weight: 600;
+	text-decoration: none;
+	white-space: nowrap;
+}
+	a:hover {
+		border-bottom: 1px solid rgba(0,0,0,0.5);
+	}
+
+#intro {
+	background: #efefef url(../images/bg.png) no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	
+	/* move to a less mixin */
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+	-webkit-align-items: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#intro header {
+	/* move to a less mixin */
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+  	-webkit-justify-content: space-between;
+  	justify-content: space-between;	
+}
+
+.avatar {
+	border-radius: 50%;
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+	/*-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));*/
+	height: 128px;
+	overflow: hidden;
+	width: 128px;
+}
+	.avatar img {
+		max-width: 100%;
+		transition: all 0.2s;
+	}
+/*	.avatar:hover img {
+		visibility: hidden;
+	}*/
+
+#intro .avatar {
+	margin-right: 64px;
+}
+
+.external-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+}
+	.external-links a:hover {
+		border: none;
+	}
+
+.external-links svg {
+	opacity: 0.7;
+}
+	.external-links a:hover svg {
+		/*fill: red;*/
+		opacity: 0.8;
+	}
