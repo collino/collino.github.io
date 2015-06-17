@@ -6,6 +6,9 @@
   "issues": "https://github.com/collino/collino.me/issues",
   "repository": "https://github.com/collino/collino.me.git",
   "author": "Collin Olan <collin.holm@googlemail.com>",
+  "scripts": {
+    "publish": "git subtree push --prefix build origin master"
+  },
   "devDependencies": {
     "handlebars": "^3.0.1",
     "metalsmith": "^1.5.0",
