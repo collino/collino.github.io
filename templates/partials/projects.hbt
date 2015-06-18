@@ -1,6 +1,9 @@
 <section id="projects">
     <h1>Projects</h1>
     <p>Coming soon.</p>
+{{#each collections.projects}}
+    <div class="placeholder-img"></div>
+{{/each}}
 {{!-- {{#each collections.projects}}
     <a href="/{{this.path}}">
         <figure>
@@ -12,4 +15,5 @@
         </figure>
     </a>
 {{/each}} --}}
+
 </section>
