@@ -2,8 +2,8 @@
 	<article>
 		<header>
 			<h1>{{title}}</h1>
-			<h2>{{description}}</h2>
-			<p>Role: {{role}}</p>
+			<p class="lead">{{{description}}}</p>
+			<p class="caption">Role: {{role}}</p>
 		</header>
 		{{{ contents }}}
 	</article>

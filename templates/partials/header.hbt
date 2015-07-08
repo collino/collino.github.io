@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>{{ title }} | Metalsmith Page</title>
-		<link rel="stylesheet" type="text/css" href="styles/base.css">
+		<title>{{ title }}</title>
+		<meta name="description" content="Digital Product Designer in New York, NY">
+		<link rel="stylesheet" type="text/css" href="/styles/base.css">
 	</head>
 	<body>

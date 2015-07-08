@@ -1,19 +1,26 @@
 <section id="projects">
-    <h1>Projects</h1>
-    <p>Coming soon.</p>
-{{#each collections.projects}}
-    <div class="placeholder-img"></div>
-{{/each}}
-{{!-- {{#each collections.projects}}
-    <a href="/{{this.path}}">
-        <figure>
-            <figcaption>
-                <h3>{{this.title}}</h3>
-                <span>{{this.date}}</span>
-            </figcaption>
-            <img src="{{this.card-image}}" class="card-img">
-        </figure>
-    </a>
-{{/each}} --}}
-
+    <div class="section-content">
+        <h1>Projects</h1>
+        <p>Coming soon.</p>
+        <div class="grid">
+        <!-- {{#each collections.projects}}
+            <div class="grid-item">
+                <div class="card">
+                    <div class="placeholder-img"></div>
+                </div>
+            </div>
+        {{/each}} -->
+        <!-- {{#each collections.projects}}
+            <a href="/{{this.path}}" class="grid-item">
+                <figure>
+                    <figcaption>
+                        <h3>{{this.title}}</h3>
+                        <span>{{this.date}}</span>
+                    </figcaption>
+                    <img src="{{this.card-image}}" class="card-img">
+                </figure>
+            </a>
+        {{/each}} -->
+        </div>
+    </div>
 </section>

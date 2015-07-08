@@ -1,6 +1,6 @@
 {{> header}}
     <section id="intro">
-        <header>
+        <div class="section-content">
             <div class="avatar" id="me">
                 <img src="https://www.dropbox.com/s/6ung8gltnvj2gih/Collin-Olan-A.jpg?raw=1">
             </div>
@@ -9,16 +9,17 @@
                 {{{ contents }}}
                 {{> satellite }}
             </div>
-        </header>
+        </div>
     </section>
     {{> projects }}
+    {{!-- <div id="dribbble"></div> --}}
     {{> about }}
     {{!--
     <script src="./scripts/dug.js"></script>
     <script>
     dug({
       endpoint: 'http://api.dribbble.com/players/collino/shots',
-      target: '#projects',
+      target: 'dribbble',
       template: '<h1>\
           <span>Dribbble</span> \
         </h1>\
@@ -33,5 +34,5 @@
       </ul>'
     });
     </script> 
-     --}}
+    --}}
 {{> footer}}
