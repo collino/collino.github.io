@@ -5,7 +5,28 @@ try this:
 http://tympanus.net/Development/AnimatedGridLayout/
 
 */
+
+/*
+
+TODO : Move all of this to LESS files or PostCSS
+
+*/
+
+
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato:400,700|Merriweather:300,300italic);
+
+/* Color */
+
+[href*=chartbeat] { color: #5CC4BE; }
+[href*=kernandlead] { color: #EC008B; }
+[href*=frogdesign] { color: #46BD00; }
+[href*=google] { color: #186DEE; }
+/*[href*=google]:first-child,
+[href*=google]:nth-child(2) { color: #186DEE; }
+[href*=google]:last-child,
+[href*=google]:nth-child(1) { color: #186DEE; }
+[href*=google]:nth-child(3) { color: #FFC500; }
+[href*=google]:nth-child(5) { color: #00A66A; }*/
 
 body {
 	color: rgba(0,0,0,0.5);
@@ -64,7 +85,7 @@ a {
 	white-space: nowrap;
 }
 	a:hover {
-		border-bottom: 1px solid rgba(0,0,0,0.5);
+		border-bottom: 1px solid;
 	}
 
 #intro {
@@ -126,7 +147,7 @@ a {
 	}
 
 .external-links svg {
-	opacity: 0.8;
+	opacity: 0.48;
 }
 	.external-links a:hover svg {
 		fill: red;
