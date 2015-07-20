@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>{{ title }}</title>
-		<meta name="description" content="Digital Product Designer in New York, NY">
+		<meta name="description" content="{{ description }}">
 		<link rel="stylesheet" type="text/css" href="/styles/base.css">
 	</head>
 	<body>
