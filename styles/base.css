@@ -45,7 +45,6 @@ h1, h2, h3 {
 }
 
 h1 {
-	color: rgba(0,0,0,0.4);
 	font-size: 32px;
 }
 
@@ -135,6 +134,14 @@ a {
 
 #intro .avatar {
 	margin-right: 64px;
+}
+
+#intro .content h1 {
+	margin-top: 0;
+}
+
+.external-links {
+	margin-top: 40px;
 }
 
 .external-links a {
