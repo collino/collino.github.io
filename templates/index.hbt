@@ -2,7 +2,7 @@
     <section id="intro">
         <div class="section-content">
             <div class="avatar" id="me">
-                <img src="https://www.dropbox.com/s/6ung8gltnvj2gih/Collin-Olan-A.jpg?raw=1">
+                <img src="./images/avatar-256.jpg">
             </div>
             <div class="content">
                 <h1>{{title}}</h1>
@@ -33,6 +33,6 @@
         {{/shots}}\
       </ul>'
     });
-    </script> 
+    </script>
     --}}
 {{> footer}}
