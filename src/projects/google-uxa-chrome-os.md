@@ -4,7 +4,7 @@ description: The goal of UXA was to create a single design language and UI frame
 collection: projects
 template: project.hbt
 date: 2013-04-30
-card-image: http://exitcreative.net/blog/wp-content/uploads/2013/01/google-uxa-model-440x281.png
+card-image: /images/google-uxa.png
 role: UI design
 ---
 
@@ -17,5 +17,3 @@ Only some key screens and parts of the OS were chosen to go through this test. T
 ![Chrome OS File Browser interaction](/images/projects/chrome-os/B-chrome-03.png)
 ![Chrome OS File Browser: Grid view](/images/projects/chrome-os/B-chrome-05.png)
 ![Chrome OS File Browser: Images](/images/projects/chrome-os/B-chrome-06.png)</div>
-
-### Polymer

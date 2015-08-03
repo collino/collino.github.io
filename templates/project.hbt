@@ -1,10 +1,12 @@
 {{> header}}
 	<article>
-		<header>
+		<header class="article-header">
 			<h1>{{title}}</h1>
-			<p class="lead">{{{description}}}</p>
 			<p class="caption">Role: {{role}}</p>
+			<p class="lead">{{{description}}}</p>
 		</header>
-		{{{ contents }}}
+		<div class="article-content">
+				{{{ contents }}}
+		</div>
 	</article>
 {{> footer}}
