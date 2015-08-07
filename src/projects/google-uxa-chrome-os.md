@@ -4,7 +4,7 @@ description: The goal of UXA was to create a single design language and UI frame
 collection: projects
 template: project.hbt
 date: 2013-04-30
-card-image: /images/google-uxa.png
+card-image: /images/google-uxa.jpg
 role: UI design
 ---
 
@@ -12,8 +12,8 @@ The goal for this sprint was to test our existing UI design framework in the Chr
 
 Only some key screens and parts of the OS were chosen to go through this test. They were the file browser, image browser, video/media player, settings, and desktop image selection.
 
-<div>![Chrome OS File Browser](/images/projects/chrome-os/B-chrome-01.png)
-![Chrome OS File Browser interaction](/images/projects/chrome-os/B-chrome-04.png)
-![Chrome OS File Browser interaction](/images/projects/chrome-os/B-chrome-03.png)
-![Chrome OS File Browser: Grid view](/images/projects/chrome-os/B-chrome-05.png)
-![Chrome OS File Browser: Images](/images/projects/chrome-os/B-chrome-06.png)</div>
+<div>![Chrome OS File Browser](/images/projects/chrome-os/chrome-01.jpg)
+![Chrome OS File Browser interaction](/images/projects/chrome-os/chrome-04.jpg)
+![Chrome OS File Browser interaction](/images/projects/chrome-os/chrome-03.jpg)
+![Chrome OS File Browser: Grid view](/images/projects/chrome-os/chrome-05.jpg)
+![Chrome OS File Browser: Images](/images/projects/chrome-os/chrome-06.jpg)</div>

@@ -3,10 +3,20 @@
 		<header class="article-header">
 			<h1>{{title}}</h1>
 			<p class="caption">Role: {{role}}</p>
-			<p class="lead">{{{description}}}</p>
+			<nav class="prev-next">
+				<a href="{{this.previous}}">Prev</a>
+  			<a href="{{this.next}}">Next</a>
+			</nav>
 		</header>
 		<div class="article-content">
-				{{{ contents }}}
+			<p class="lead">{{{description}}}</p>
+			{{{ contents }}}
 		</div>
+		<footer class="article-footer">
+			<nav class="prev-next">
+				<a href="{{this.previous}}">Prev</a>
+				<a href="{{this.next}}">Next</a>
+			</nav>
+		</footer>
 	</article>
 {{> footer}}

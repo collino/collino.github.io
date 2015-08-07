@@ -17,10 +17,10 @@ TODO : Move all of this to LESS files or PostCSS
 
 /* Color */
 
-[href*=chartbeat] { color: #5CC4BE; }
+/*[href*=chartbeat] { color: #5CC4BE; }
 [href*=kernandlead] { color: #EC008B; }
 [href*=frogdesign] { color: #46BD00; }
-[href*=google] { color: #186DEE; }
+[href*=google] { color: #186DEE; }*/
 /*[href*=google]:first-child,
 [href*=google]:nth-child(2) { color: #186DEE; }
 [href*=google]:last-child,
@@ -29,7 +29,7 @@ TODO : Move all of this to LESS files or PostCSS
 [href*=google]:nth-child(5) { color: #00A66A; }*/
 
 body {
-	color: rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.6);
 	margin: 0;
 	padding: 0;
 	font-family: 'Source Sans Pro', 'Lucida Grande', Arial, sans-serif;
@@ -37,7 +37,12 @@ body {
 	vertical-align: baseline;
 }
 
+h1, h2, h3, h4, p {
+	max-width: 40em;
+}
+
 h1, h2, h3, h4 {
+	/*color: rgba(0,0,0,0.6);*/
 	font-family: 'Merriweather', serif;
 }
 
@@ -46,30 +51,31 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 32px;
-	line-height: 1.2;
+	font-size: 1.5em;
+	line-height: 1.16666666666667;
 	margin: 1em 0;
 }
 
 p,
 .lead {
-	max-width: 40em;
 	line-height: 1.4;
 	margin: 1em 0;
 }
 
 p {
-	font-size: 16px;
+	font-size: .875em;
 }
 
 .lead {
 	font-family: 'Merriweather', serif;
-	font-size: 15px;
+	font-size: 1em;
+	font-size: 1rem;
 	font-style: italic;
 }
 
 .caption {
-	font-size: 13px;
+	font-size: .8125em;
+	font-size: .8125rem;
 	color: rgba(0,0,0,0.4);
 }
 
@@ -82,7 +88,7 @@ img {
 }
 
 a {
-	color: rgba(0,0,0,0.6);
+	color: rgba(0,0,0,0.8);
 	font-weight: 600;
 	text-decoration: none;
 	white-space: nowrap;

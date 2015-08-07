@@ -1,36 +1,35 @@
 {{> header}}
     <section id="intro">
         <div class="section-content">
+          <header>
             <div class="avatar" id="me">
                 <img src="./images/avatar-256.jpg">
             </div>
             <h1>{{title}}</h1>
-            {{{ contents }}}
-            {{> satellite }}
+          </header>
+          {{{ contents }}}
+          {{> satellite }}
         </div>
     </section>
-    {{> projects }}
-    {{!-- <div id="dribbble"></div> --}}
-    {{> about }}
-    {{!--
-    <script src="./scripts/dug.js"></script>
-    <script>
-    dug({
-      endpoint: 'http://api.dribbble.com/players/collino/shots',
-      target: 'dribbble',
-      template: '<h1>\
-          <span>Dribbble</span> \
-        </h1>\
-        <ul>\
-        {{#shots}}\
-          <li>\
-            <a href="{{url}}" title="{{title}}">\
-              <img src="{{image_400_url}}" alt="{{title}}">\
-            </a>\
-          </li>\
-        {{/shots}}\
-      </ul>'
-    });
-    </script>
-    --}}
+    <section id="projects">
+        <div class="section-content">
+          <header>
+            <h1>Projects</h1>
+          </header>
+          <p>Coming soon.</p>
+          <div class="grid">
+            {{> projects }}
+          </div>
+        </div>
+    </section>
+    <section id="about">
+    	{{!-- Load in about content from a file? --}}
+    	<div class="section-content">
+        <header>
+          <h1>About me</h1>
+        </header>
+    		<p>I'm a designer with a diverse background and extensive experience in creating top tier experiences through user empathy and fresh visual design. My goals are to create useful, beautiful work and to facilitate the same in others.</p>
+    		<p>I'm influenced by nature, great typography, and spend a great deal of time listening to music and thinking about art. As much as computers of all sizes are a part of my day, I look forward to time away from them. I've been able to draw since I can first remember, and love the outdoors. I'm an avid cyclist, and also spend a quarter of the year with a bunch of other crazies racing Cyclocross.</p>
+    	</div>
+    </section>
 {{> footer}}

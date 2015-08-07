@@ -1,9 +1,0 @@
-<section id="about">
-	{{!-- Load in about content from a file? --}}
-	<div class="section-content">
-		<h1>About me</h1>
-		<p>I'm a designer with a diverse background and extensive experience in creating top tier experiences through user empathy and fresh visual design. My goals are to create useful, beautiful work and to facilitate the same in others.</p>
-		{{!-- what was i going to put here? fuck if i know. got interrupted --}}
-		<p>I'm influenced by nature, great typography, and spend a great deal of time listening to music and thinking about art. As much as computers of all sizes are a part of my day, I look forward to time away from them. I've been able to draw since I can first remember, and love the outdoors. I'm an avid cyclist, and also spend a quarter of the year with a bunch of other crazies racing Cyclocross.</p>
-	</div>
-</section>
