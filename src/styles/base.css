@@ -98,7 +98,7 @@ a {
 	}
 
 #intro {
-	background: #efefef url(../images/bg.png) no-repeat;
+	background: #efefef;
 	background-size: cover;
 	box-sizing: border-box;
 

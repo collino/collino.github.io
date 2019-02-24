@@ -2,15 +2,13 @@
     <section id="intro">
         <div class="section-content">
           <header>
-            <div class="avatar" id="me">
-                <img src="./images/avatar-256.jpg">
-            </div>
             <h1>{{title}}</h1>
           </header>
           {{{ contents }}}
           {{> satellite }}
         </div>
     </section>
+    {{!-- Load in about content from a file?
     <section id="projects">
         <div class="section-content">
           <header>
@@ -23,7 +21,6 @@
         </div>
     </section>
     <section id="about">
-    	{{!-- Load in about content from a file? --}}
     	<div class="section-content">
         <header>
           <h1>About me</h1>
@@ -32,4 +29,5 @@
     		<p>I'm influenced by nature, great typography, and spend a great deal of time listening to music and thinking about art. As much as computers of all sizes are a part of my day, I look forward to time away from them. I've been able to draw since I can first remember, and love the outdoors. I'm an avid cyclist, and also spend a quarter of the year with a bunch of other crazies racing Cyclocross.</p>
     	</div>
     </section>
+    --}}
 {{> footer}}
