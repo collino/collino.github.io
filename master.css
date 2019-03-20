@@ -1,0 +1,156 @@
+
+/*
+
+try this:
+http://tympanus.net/Development/AnimatedGridLayout/
+
+*/
+
+/*
+
+TODO : Move all of this to LESS files or PostCSS
+
+*/
+
+
+/* Replace this with Larsseit or something else: */
+/* @import url(https://fonts.googleapis.com/css?family=Arimo); */
+
+/* Color */
+
+[href*=pinterest]:hover {
+	/* background-color: rgba(230, 0, 35, 0.10); */
+  border-bottom-color: #E60023;
+  color: #E60023;
+}
+[href*=chartbeat]:hover {
+  border-bottom-color: #34B2B2;
+  color: #34B2B2;
+}
+[href*=kernandlead]:hover {
+  border-bottom-color: #EC008B;
+  color: #EC008B;
+}
+[href*=frogdesign]:hover {
+  border-bottom-color: #46BD00;
+  color: #46BD00;
+}
+[href*=google]:hover {
+  border-bottom-color: #186DEE;
+  color: #186DEE;
+}
+[href*=linkedin]:hover {
+  border-bottom-color: #0077b5;
+  color: #0077b5;
+}
+
+
+html {
+  background-color:#FFFCF5;
+}
+
+body {
+	/* color: rgba(0,0,0,0.9); */
+	color: rgba(0,0,0,0.6);
+	margin: 0;
+	padding: 2rem;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, p {
+	max-width: 30em;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 400;
+}
+
+h2, h3 {
+	/* color: rgba(0,0,0,0.9); */
+}
+
+h1, h2 {
+	font-size: 1.2em;
+	margin: 1em 0;
+}
+
+
+p {
+	font-size: 1em;
+}
+
+p,
+.lead {
+	line-height: 1.4;
+}
+
+p {
+	margin: 1em 0;
+}
+
+.lead {
+  font-family: serif;
+	font-size: 2.4em;
+	margin-bottom: 4rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+  border-bottom: 0.08em solid rgba(0,0,0,0.1);
+	color: #0000ee9a;
+	text-decoration: none;
+	white-space: nowrap;
+}
+	a:hover {
+		border-bottom-color: #0000ee9a;
+	}
+
+footer {
+
+}
+
+.external-links {
+	
+}
+  .external-links a {
+		color: rgba(0,0,0,0.4);
+		display:inline-block;
+  }
+
+.block {
+	margin-bottom: 4rem;
+}
+
+/* grid */
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.column {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+}
+
+.column img {
+	width: 100%;
+}
+
+
+/* ui */
+.card {
+
+}
+.card:hover {
+   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.24);
+}
