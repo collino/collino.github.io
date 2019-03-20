@@ -45,8 +45,13 @@ TODO : Move all of this to LESS files or PostCSS
 }
 
 
-html {
-  background-color:#FFFCF5;
+html,
+body {
+	background-color:#FFFCF5;
+	font-family: system, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	vertical-align: baseline;
 }
 
 body {
@@ -54,32 +59,32 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	padding: 2rem;
-	font-family: sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	vertical-align: baseline;
 }
 
 h1, h2, h3, h4, p {
 	max-width: 30em;
 }
 
-h1, h2, h3, h4 {
-	font-weight: 400;
-}
-
-
 h1, h2 {
 	font-size: 1.2em;
+	font-weight: 600;
 	margin-bottom: 1rem;
+}
+
+h3, h4 {
+	font-weight: 500;
 }
 
 h2 {
 	margin-top: 2rem;
 }
 
+h3 {
+	font-size: 1rem;
+}
+
 p {
-	font-size: 1em;
+	font-size: 1rem;
 	margin: 1rem 0;
 }
 
@@ -115,9 +120,10 @@ footer {
 .external-links {
 	
 }
-  .external-links a {
+  .external-links > * {
 		color: rgba(0,0,0,0.4);
 		display:inline-block;
+		margin-right: .5rem;
   }
 
 
