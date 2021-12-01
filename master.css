@@ -17,9 +17,13 @@ TODO : Move all of this to LESS files or PostCSS
 /* @import url(https://fonts.googleapis.com/css?family=Arimo); */
 
 /* Color */
+[href*=medium]:hover {
+  border-bottom-color: #34AA45;
+  color: #34AA45;
+}
 [href*=projector]:hover {
-  border-bottom-color: #EBA9B2;
-  color: #EBA9B2;
+  border-bottom-color: #0345CF;
+  color: #0345CF;
 }
 [href*=pinterest]:hover {
 	/* background-color: rgba(230, 0, 35, 0.10); */
