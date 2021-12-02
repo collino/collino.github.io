@@ -112,12 +112,12 @@ img {
 
 a {
   border-bottom: 0.08em solid rgba(0,0,0,0.1);
-	color: #0000ee80;
+	color: rgba(0,0,0,0.6);
 	text-decoration: none;
 	white-space: nowrap;
 }
 	a:hover {
-		border-bottom-color: #0000ee80;
+		border-bottom-color: rgba(0,0,0,0.6);
 	}
 
 footer {
