@@ -46,10 +46,10 @@ TODO : Move all of this to LESS files or PostCSS
   border-bottom-color: #186DEE;
   color: #186DEE;
 }
-[href*=linkedin]:hover {
+/* [href*=linkedin]:hover {
   border-bottom-color: #0077b5;
   color: #0077b5;
-}
+} */
 
 
 html,
@@ -96,8 +96,9 @@ p {
 }
 
 header h1 {
+	font-style: italic;
+	font-weight: 400;
 	margin-top: 0;
-/* 	color: rgba(0,0,0,0.5); */
 }
 
 img {
