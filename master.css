@@ -100,13 +100,6 @@ header h1 {
 /* 	color: rgba(0,0,0,0.5); */
 }
 
-.lead {
-  font-family: serif;
-	font-size: 2rem;
-	line-height: .75;
-	margin-bottom: 1rem;
-}
-
 img {
 	max-width: 100%;
 }
@@ -120,21 +113,9 @@ a {
 		border-bottom-color: rgba(0,0,0,0.6);
 	}
 
-footer {
-
+footer p {
+	font-size: 0.8rem;
 }
-
-.external-links {
-	
-}
-  .external-links > * {
-		color: rgba(0,0,0,0.4);
-		display:inline-block;
-		margin-right: .5rem;
-  }
-
-
-
 
 .box {
 	margin-bottom: 2rem;
