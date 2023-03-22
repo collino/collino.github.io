@@ -96,7 +96,7 @@ p {
 
 header h1 {
 	margin-top: 0;
-	color: rbga(0,0,0,0.6);
+	color: rgba(0,0,0,0.5);
 }
 
 .lead {
