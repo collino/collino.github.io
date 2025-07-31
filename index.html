@@ -167,6 +167,20 @@
             color: #3e3e3e;
         }
 
+        .email-link {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #3e3e3e;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .email-link:hover {
+            color: #000000;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .intro-name, .section-name {
@@ -198,7 +212,7 @@
         <div class="intro">
             <div class="intro-header">
                 <h1 class="intro-name">Collin Olan</h1>
-                <div class="intro-email">hi@collino.me</div>
+                <div class="intro-email" id="email-container"></div>
             </div>
             <div class="intro-description">
                 Hello, I'm a people focused designer based in the San Francisco Bay Area.
@@ -319,5 +333,48 @@
             <div class="footer-text">Thanks for looking</div>
         </div>
     </div>
+
+    <script>
+        // Email protection - store email in parts to avoid scraping
+        function createEmailLink() {
+            const emailParts = ['hi', '@', 'collino', '.', 'me'];
+            const email = emailParts.join('');
+            
+            const emailContainer = document.getElementById('email-container');
+            const emailLink = document.createElement('a');
+            
+            emailLink.href = `mailto:${email}`;
+            emailLink.textContent = email;
+            emailLink.className = 'email-link';
+            emailLink.title = 'Click to copy email address';
+            
+            emailLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Copy to clipboard
+                navigator.clipboard.writeText(email).then(function() {
+                    // Show success feedback
+                    const originalText = emailLink.textContent;
+                    emailLink.textContent = 'Copied!';
+                    emailLink.style.color = '#00AB6C'; // Green color for success
+                    
+                    setTimeout(function() {
+                        emailLink.textContent = originalText;
+                        emailLink.style.color = ''; // Reset to default
+                    }, 2000);
+                }).catch(function(err) {
+                    // Fallback for older browsers
+                    console.log('Could not copy email: ', err);
+                    // Still open mailto as fallback
+                    window.location.href = `mailto:${email}`;
+                });
+            });
+            
+            emailContainer.appendChild(emailLink);
+        }
+        
+        // Initialize email link when page loads
+        document.addEventListener('DOMContentLoaded', createEmailLink);
+    </script>
 </body>
 </html> 
