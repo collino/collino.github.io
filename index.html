@@ -55,14 +55,6 @@
             flex-grow: 1;
         }
 
-        /* .intro-email {
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: #6a6a6a;
-            white-space: nowrap;
-        } */
-
         .intro-description {
             font-family: 'Nunito Sans', sans-serif;
             font-weight: 300;
@@ -168,7 +160,7 @@
         }
 
         .email-link {
-            color: #000000;
+            color: #1025EA;
             text-decoration: none;
             cursor: pointer;
             transition: color 0.2s ease;
@@ -176,6 +168,56 @@
 
         .email-link:hover {
             color: #1025EA;
+        }
+
+        .copy-feedback {
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 14px;
+            color: #00AB6C;
+            opacity: 0;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .copy-feedback.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom tooltip styles */
+        .custom-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(0);
+            background: #ffffff;
+            color: #000000;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: 400;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 1000;
+            pointer-events: none;
+            margin-bottom: 4px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.12), 0 20px 50px 0 rgba(0, 0, 0, 0.14);
+            /* background: rgba(255, 255, 255, 0.80);
+            backdrop-filter: blur(16px); */
+        }
+
+        .custom-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-4px);
+        }
+
+        .email-container {
+            position: relative;
+            display: inline;
         }
 
         /* Responsive adjustments */
@@ -336,26 +378,43 @@
             const email = emailParts.join('');
             
             const emailContainer = document.getElementById('email-container');
-            const emailLink = document.createElement('a');
+            emailContainer.className = 'intro-email email-container';
             
+            // Create custom tooltip
+            const tooltip = document.createElement('span');
+            tooltip.className = 'custom-tooltip';
+            tooltip.id = 'emailTooltip';
+            tooltip.textContent = 'Copy';
+            emailContainer.appendChild(tooltip);
+            
+            const emailLink = document.createElement('a');
             emailLink.href = `mailto:${email}`;
             emailLink.textContent = email;
             emailLink.className = 'email-link';
-            emailLink.title = 'Click to copy email address';
+            
+            // Add hover events for tooltip
+            emailContainer.addEventListener('mouseenter', function() {
+                const tooltip = document.getElementById('emailTooltip');
+                tooltip.classList.add('show');
+            });
+            
+            emailContainer.addEventListener('mouseleave', function() {
+                const tooltip = document.getElementById('emailTooltip');
+                tooltip.classList.remove('show');
+            });
             
             emailLink.addEventListener('click', function(e) {
                 e.preventDefault();
                 
                 // Copy to clipboard
                 navigator.clipboard.writeText(email).then(function() {
-                    // Show success feedback
-                    const originalText = emailLink.textContent;
-                    emailLink.textContent = 'Copied!';
-                    emailLink.style.color = '#00AB6C'; // Green color for success
+                    // Update tooltip text to "Copied"
+                    const tooltip = document.getElementById('emailTooltip');
+                    tooltip.textContent = 'Copied';
                     
+                    // Reset tooltip after 2 seconds
                     setTimeout(function() {
-                        emailLink.textContent = originalText;
-                        emailLink.style.color = ''; // Reset to default
+                        tooltip.textContent = 'Copy';
                     }, 2000);
                 }).catch(function(err) {
                     // Fallback for older browsers
