@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /resume.pdf
+Disallow: /resume-*.pdf
+Disallow: /collin-olan-resume.pdf 
